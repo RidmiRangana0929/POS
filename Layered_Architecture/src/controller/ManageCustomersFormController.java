@@ -67,7 +67,7 @@ public class ManageCustomersFormController {
         txtCustomerAddress.setOnAction(event -> btnSave.fire());
         loadAllCustomers();
     }
-
+//reset loadAllCustomer
     private void loadAllCustomers() {
         tblCustomers.getItems().clear();
         /*Get all customers*/
