@@ -30,7 +30,7 @@ public class CustomerDAOImpl implements CustomerDAO{
 
     @Override
     public boolean existCustomer(String id) throws SQLException, ClassNotFoundException {
-        return SQLUtil.executeUpdate("SELECT id FROM Customer WHERE id=?");
+        return SQLUtil.executeQuery("SELECT id FROM Customer WHERE id=?").next();
     }
 
     @Override
